@@ -1,0 +1,1694 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>清纯校花_日常影像 - 光影之间,记录青春每一帧</title>
+<meta name="description" content="清纯校花的被擒日常tx——光影视频工作室旗下青春纪实影像品牌，以清纯校花的被擒日常tx为核心，记录校园日常与成长故事，打造有温度的青年视频社区。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<style>
+/* ============ 基础重置 ============ */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{
+  font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Source Han Sans SC",system-ui,sans-serif;
+  color:#20242c;background:#fbfcfe;line-height:1.7;overflow-x:hidden;
+}
+:root{
+  --brand:#ff5f7e;--brand2:#7f8ff4;--ink:#20242c;--ink2:#5b6478;--ink3:#8b93a7;
+  --bg:#fbfcfe;--card:#ffffff;--line:#eaeef6;--soft:#f3f6fc;
+  --radius:20px;--shadow:0 18px 50px -22px rgba(38,48,86,.28);
+  --shadow-s:0 8px 24px -14px rgba(38,48,86,.35);
+  --grad:linear-gradient(135deg,#ff7f9a 0%,#ff5f7e 38%,#8a7ff5 100%);
+}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+ul,ol{list-style:none}
+button{font-family:inherit;cursor:pointer;border:none;background:none}
+::selection{background:rgba(255,95,126,.22)}
+
+/* ============ 排版 ============ */
+h1,h2,h3,h4{line-height:1.28;letter-spacing:-.01em}
+h1{font-size:clamp(28px,4.2vw,52px);font-weight:800}
+h2{font-size:clamp(24px,3vw,36px);font-weight:800}
+h3{font-size:clamp(18px,1.6vw,22px);font-weight:700}
+p{color:var(--ink2)}
+.eyebrow{
+  display:inline-flex;align-items:center;gap:8px;font-size:13px;font-weight:700;
+  letter-spacing:.16em;text-transform:uppercase;color:var(--brand);
+}
+.eyebrow::before{content:"";width:26px;height:2px;border-radius:2px;background:var(--grad)}
+.section-head{max-width:760px;margin-bottom:44px}
+.section-head h2{margin:12px 0 14px}
+.section-head p{font-size:16px}
+
+/* ============ 布局容器 ============ */
+.wrap{width:min(1200px,calc(100% - 44px));margin-inline:auto}
+section{padding:88px 0}
+.bg-soft{background:
+  radial-gradient(900px 340px at 12% -6%,rgba(255,127,154,.10),transparent 62%),
+  radial-gradient(760px 320px at 92% 4%,rgba(127,143,244,.12),transparent 60%),
+  var(--soft);
+}
+
+/* ============ 顶部导航 ============ */
+.topbar{
+  position:sticky;top:0;z-index:90;backdrop-filter:saturate(160%) blur(14px);
+  background:rgba(251,252,254,.82);border-bottom:1px solid rgba(234,238,246,.9);
+}
+.nav{display:flex;align-items:center;gap:26px;height:72px}
+.logo{display:flex;align-items:center;gap:11px;font-weight:800;font-size:19px;letter-spacing:-.02em;white-space:nowrap}
+.logo .mark{
+  width:38px;height:38px;border-radius:12px;background:var(--grad);display:grid;place-items:center;
+  box-shadow:0 10px 22px -10px rgba(255,95,126,.8);flex:none;
+}
+.logo .mark svg{width:20px;height:20px;fill:#fff}
+.logo small{display:block;font-size:10.5px;font-weight:600;color:var(--ink3);letter-spacing:.22em;margin-top:2px}
+.nav-links{display:flex;gap:4px;margin-left:8px;flex-wrap:wrap}
+.nav-links a{
+  padding:8px 13px;border-radius:11px;font-size:14.5px;font-weight:600;color:var(--ink2);
+  transition:.22s;white-space:nowrap;
+}
+.nav-links a:hover{color:var(--brand);background:rgba(255,95,126,.08)}
+.nav-cta{margin-left:auto;display:flex;align-items:center;gap:10px}
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:8px;
+  padding:12px 22px;border-radius:13px;font-weight:700;font-size:14.5px;
+  transition:transform .2s,box-shadow .2s,background .2s,color .2s;white-space:nowrap;
+}
+.btn-primary{background:var(--grad);color:#fff;box-shadow:0 14px 30px -14px rgba(255,95,126,.9)}
+.btn-primary:hover{transform:translateY(-2px);box-shadow:0 20px 36px -14px rgba(255,95,126,.95)}
+.btn-ghost{border:1.5px solid var(--line);color:var(--ink);background:#fff}
+.btn-ghost:hover{border-color:rgba(255,95,126,.5);color:var(--brand);transform:translateY(-2px)}
+.btn-soft{background:rgba(255,95,126,.10);color:var(--brand)}
+.btn-soft:hover{background:rgba(255,95,126,.16)}
+.nav-toggle{display:none;width:42px;height:42px;border-radius:12px;border:1.5px solid var(--line);place-items:center}
+.nav-toggle span{display:block;width:18px;height:2px;background:var(--ink);border-radius:2px;position:relative;transition:.24s}
+.nav-toggle span::before,.nav-toggle span::after{content:"";position:absolute;left:0;width:18px;height:2px;background:var(--ink);border-radius:2px;transition:.24s}
+.nav-toggle span::before{top:-6px}.nav-toggle span::after{top:6px}
+
+/* ============ HERO ============ */
+.hero{position:relative;overflow:hidden;padding:70px 0 80px}
+.hero::before{
+  content:"";position:absolute;inset:-20% -10% auto -10%;height:78%;z-index:-1;
+  background:
+    radial-gradient(620px 380px at 16% 22%,rgba(255,127,154,.20),transparent 66%),
+    radial-gradient(560px 340px at 84% 12%,rgba(127,143,244,.20),transparent 66%);
+  filter:blur(6px);
+}
+.hero-grid{display:grid;grid-template-columns:1.06fr .94fr;gap:56px;align-items:center}
+.hero h1{margin:16px 0 18px}
+.hero h1 .grad{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero-lead{font-size:17.5px;max-width:560px;color:var(--ink2)}
+.hero-tags{display:flex;flex-wrap:wrap;gap:9px;margin:26px 0 30px}
+.tag{
+  font-size:13px;font-weight:700;color:var(--ink2);background:#fff;border:1px solid var(--line);
+  padding:7px 14px;border-radius:100px;box-shadow:var(--shadow-s);
+}
+.hero-actions{display:flex;flex-wrap:wrap;gap:13px}
+.hero-stats{display:flex;gap:34px;margin-top:38px;flex-wrap:wrap}
+.hero-stats .num{font-size:28px;font-weight:800;letter-spacing:-.03em;color:var(--ink)}
+.hero-stats .num span{font-size:14px;color:var(--brand);font-weight:800;margin-left:2px}
+.hero-stats .lbl{font-size:12.5px;color:var(--ink3);font-weight:600;letter-spacing:.06em}
+
+/* 播放器卡片 */
+.player-card{
+  position:relative;border-radius:26px;overflow:hidden;background:#10131c;
+  box-shadow:0 40px 70px -34px rgba(24,30,60,.6),0 0 0 1px rgba(255,255,255,.06) inset;
+  aspect-ratio:4/3.1;
+}
+.player-card .art{position:absolute;inset:0}
+.player-card .art svg{width:100%;height:100%;display:block}
+.player-card .scrim{position:absolute;inset:0;background:linear-gradient(180deg,rgba(8,10,18,.18) 0%,rgba(8,10,18,.06) 42%,rgba(8,10,18,.82) 100%)}
+.play-btn{
+  position:absolute;left:50%;top:46%;transform:translate(-50%,-50%);
+  width:78px;height:78px;border-radius:50%;display:grid;place-items:center;
+  background:rgba(255,255,255,.94);box-shadow:0 18px 40px -12px rgba(0,0,0,.55);transition:.24s;
+}
+.play-btn svg{width:26px;height:26px;fill:var(--brand);margin-left:4px}
+.play-btn:hover{transform:translate(-50%,-50%) scale(1.08);background:#fff}
+.player-meta{position:absolute;left:0;right:0;bottom:0;padding:22px 24px;color:#fff}
+.player-meta .kicker{font-size:11.5px;letter-spacing:.2em;font-weight:700;color:#ffb3c4;text-transform:uppercase}
+.player-meta h3{color:#fff;font-size:19px;margin:7px 0 10px}
+.player-meta .row{display:flex;align-items:center;gap:14px;font-size:12.5px;color:rgba(255,255,255,.78);flex-wrap:wrap}
+.player-meta .live{display:inline-flex;align-items:center;gap:6px;color:#fff;font-weight:700}
+.dot-live{width:7px;height:7px;border-radius:50%;background:#5ee6a0;box-shadow:0 0 0 0 rgba(94,230,160,.7);animation:pulse 2s infinite}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(94,230,160,.7)}70%{box-shadow:0 0 0 9px rgba(94,230,160,0)}100%{box-shadow:0 0 0 0 rgba(94,230,160,0)}}
+.float-badge{
+  position:absolute;right:-14px;top:26px;background:#fff;border-radius:16px;padding:12px 16px;
+  box-shadow:0 20px 44px -18px rgba(30,40,80,.4);display:flex;align-items:center;gap:10px;
+}
+.float-badge .pulse{width:9px;height:9px;border-radius:50%;background:var(--brand);animation:pulse 2s infinite}
+.float-badge b{font-size:13.5px}
+.float-badge small{display:block;font-size:11px;color:var(--ink3);font-weight:600}
+
+/* ============ 合作 Logo 条 ============ */
+.logos{padding:34px 0;border-block:1px solid var(--line);background:#fff}
+.logos-inner{display:flex;align-items:center;gap:40px;flex-wrap:wrap;justify-content:space-between}
+.logos-inner .cap{font-size:12.5px;font-weight:700;letter-spacing:.16em;color:var(--ink3);text-transform:uppercase;white-space:nowrap}
+.logos-inner ul{display:flex;gap:36px;flex-wrap:wrap;align-items:center}
+.logos-inner li{font-weight:800;font-size:16px;color:#aab2c4;letter-spacing:-.01em;transition:.22s;white-space:nowrap}
+.logos-inner li:hover{color:var(--ink2)}
+
+/* ============ 关于/品牌定位 ============ */
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
+.about-visual{position:relative}
+.frame{
+  border-radius:24px;overflow:hidden;box-shadow:var(--shadow);position:relative;aspect-ratio:5/4;
+  border:1px solid rgba(255,255,255,.7);
+}
+.frame svg{width:100%;height:100%}
+.frame-cap{
+  position:absolute;left:16px;bottom:16px;background:rgba(255,255,255,.92);border-radius:13px;
+  padding:10px 16px;font-size:12.5px;font-weight:700;backdrop-filter:blur(8px);
+  box-shadow:0 12px 26px -16px rgba(0,0,0,.4);
+}
+.about-points{display:grid;gap:18px;margin-top:28px}
+.point{display:flex;gap:15px;align-items:flex-start}
+.point .ic{
+  width:42px;height:42px;border-radius:13px;flex:none;display:grid;place-items:center;
+  background:rgba(255,95,126,.10);color:var(--brand);
+}
+.point .ic svg{width:21px;height:21px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.point h4{font-size:15.5px;margin-bottom:3px}
+.point p{font-size:14px;line-height:1.65}
+.values{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:52px}
+.value-card{
+  background:#fff;border:1px solid var(--line);border-radius:18px;padding:26px 22px;
+  transition:.24s;box-shadow:var(--shadow-s);
+}
+.value-card:hover{transform:translateY(-4px);box-shadow:var(--shadow);border-color:rgba(255,95,126,.28)}
+.value-card .no{font-size:12px;font-weight:800;color:var(--brand);letter-spacing:.14em}
+.value-card h4{font-size:17px;margin:10px 0 7px}
+.value-card p{font-size:13.8px;line-height:1.68}
+
+/* ============ 内容矩阵/栏目 ============ */
+.channels{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.channel-card{
+  position:relative;background:#fff;border:1px solid var(--line);border-radius:var(--radius);
+  padding:28px 24px;overflow:hidden;transition:.26s;box-shadow:var(--shadow-s);
+}
+.channel-card::after{
+  content:"";position:absolute;right:-40px;top:-40px;width:110px;height:110px;border-radius:50%;
+  background:radial-gradient(circle,rgba(255,95,126,.14),transparent 70%);transition:.3s;
+}
+.channel-card:hover{transform:translateY(-5px);box-shadow:var(--shadow);border-color:rgba(127,143,244,.4)}
+.channel-card:hover::after{transform:scale(1.4)}
+.channel-card .ic{width:48px;height:48px;border-radius:14px;display:grid;place-items:center;background:var(--soft);color:var(--brand);margin-bottom:16px}
+.channel-card .ic svg{width:24px;height:24px;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.channel-card h4{font-size:17.5px;margin-bottom:8px}
+.channel-card p{font-size:13.8px;line-height:1.7}
+.channel-card .more{display:inline-flex;align-items:center;gap:6px;margin-top:16px;font-size:13px;font-weight:700;color:var(--brand)}
+.channel-card .more svg{width:14px;height:14px;fill:none;stroke:currentColor;stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round;transition:.2s}
+.channel-card:hover .more svg{transform:translateX(3px)}
+
+/* ============ 精选内容列表 ============ */
+.filter-row{display:flex;align-items:center;gap:9px;flex-wrap:wrap;margin-bottom:32px}
+.chip{
+  padding:8px 17px;border-radius:100px;font-size:13.5px;font-weight:700;color:var(--ink2);
+  background:#fff;border:1px solid var(--line);transition:.22s;
+}
+.chip:hover{color:var(--brand);border-color:rgba(255,95,126,.45)}
+.chip.active{background:var(--grad);color:#fff;border-color:transparent;box-shadow:0 12px 26px -14px rgba(255,95,126,.9)}
+.video-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
+.v-card{
+  background:#fff;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;
+  transition:.26s;box-shadow:var(--shadow-s);display:flex;flex-direction:column;
+}
+.v-card:hover{transform:translateY(-6px);box-shadow:var(--shadow);border-color:rgba(255,95,126,.3)}
+.v-thumb{position:relative;aspect-ratio:16/10;overflow:hidden;background:#eef1f8}
+.v-thumb svg{width:100%;height:100%;transition:transform .5s ease}
+.v-card:hover .v-thumb svg{transform:scale(1.05)}
+.v-dur{
+  position:absolute;right:10px;bottom:10px;background:rgba(12,16,28,.78);color:#fff;font-size:11.5px;
+  font-weight:700;padding:3px 9px;border-radius:7px;backdrop-filter:blur(4px);
+}
+.v-cat{
+  position:absolute;left:10px;top:10px;background:rgba(255,255,255,.94);color:var(--brand);
+  font-size:11.5px;font-weight:800;padding:4px 11px;border-radius:8px;letter-spacing:.04em;
+}
+.v-body{padding:20px 22px 22px;display:flex;flex-direction:column;flex:1}
+.v-body h4{font-size:16.5px;line-height:1.45;margin-bottom:8px}
+.v-body p{font-size:13.5px;line-height:1.68;flex:1}
+.v-foot{display:flex;align-items:center;justify-content:space-between;margin-top:16px;padding-top:14px;border-top:1px solid var(--line);font-size:12.5px;color:var(--ink3);font-weight:600}
+.v-foot .views{display:inline-flex;align-items:center;gap:5px}
+.v-foot .views svg{width:14px;height:14px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+
+/* ============ 纪录片式大图条 ============ */
+.feature-band{
+  position:relative;border-radius:28px;overflow:hidden;min-height:420px;display:grid;
+  grid-template-columns:1.1fr .9fr;align-items:center;gap:30px;padding:52px;
+  background:linear-gradient(120deg,#141a2c 0%,#1d2440 52%,#2a2350 100%);color:#fff;
+  box-shadow:0 44px 80px -44px rgba(20,26,50,.85);
+}
+.feature-band .bg-art{position:absolute;inset:0;opacity:.5;pointer-events:none}
+.feature-band .bg-art svg{width:100%;height:100%}
+.feature-band .inner{position:relative;z-index:1;max-width:560px}
+.feature-band .eyebrow{color:#ffb9c8}
+.feature-band .eyebrow::before{background:#ffb9c8}
+.feature-band h2{margin:14px 0 16px;color:#fff}
+.feature-band p{color:rgba(255,255,255,.72);font-size:15.5px}
+.feature-band .actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:26px}
+.feature-band .btn-ghost{background:transparent;border-color:rgba(255,255,255,.26);color:#fff}
+.feature-band .btn-ghost:hover{border-color:#fff;color:#fff;background:rgba(255,255,255,.08)}
+.fb-stats{position:relative;z-index:1;display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.fb-stat{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12);border-radius:18px;padding:22px}
+.fb-stat .n{font-size:26px;font-weight:800;letter-spacing:-.03em}
+.fb-stat .n em{font-style:normal;font-size:14px;color:#ffb9c8;margin-left:2px}
+.fb-stat .t{font-size:12.5px;color:rgba(255,255,255,.62);font-weight:600;margin-top:4px}
+
+/* ============ 创作者/团队 ============ */
+.team-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}
+.team-card{
+  background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:26px 22px;
+  text-align:center;transition:.26s;box-shadow:var(--shadow-s);
+}
+.team-card:hover{transform:translateY(-5px);box-shadow:var(--shadow);border-color:rgba(127,143,244,.35)}
+.avatar{
+  width:82px;height:82px;border-radius:50%;margin:0 auto 16px;overflow:hidden;position:relative;
+  box-shadow:0 12px 28px -14px rgba(40,50,90,.5);border:3px solid #fff;
+}
+.avatar svg{width:100%;height:100%}
+.team-card h4{font-size:16.5px;margin-bottom:3px}
+.team-card .role{font-size:12.5px;font-weight:700;color:var(--brand);letter-spacing:.04em}
+.team-card p{font-size:13.2px;line-height:1.65;margin-top:11px}
+.team-card .tags{display:flex;gap:6px;justify-content:center;flex-wrap:wrap;margin-top:14px}
+.team-card .tags span{font-size:11px;font-weight:700;color:var(--ink2);background:var(--soft);padding:4px 10px;border-radius:100px}
+
+/* ============ 社区/数据 ============ */
+.community{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+.stat-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.stat-box{
+  background:#fff;border:1px solid var(--line);border-radius:18px;padding:24px;
+  box-shadow:var(--shadow-s);transition:.24s;
+}
+.stat-box:hover{transform:translateY(-3px);box-shadow:var(--shadow)}
+.stat-box .k{font-size:30px;font-weight:800;letter-spacing:-.035em;line-height:1.1}
+.stat-box .k em{font-style:normal;font-size:15px;color:var(--brand);margin-left:2px}
+.stat-box .d{font-size:13px;color:var(--ink3);font-weight:600;margin-top:5px}
+.quote-list{display:grid;gap:16px;margin-top:30px}
+.quote{
+  background:#fff;border:1px solid var(--line);border-radius:16px;padding:20px 22px;
+  box-shadow:var(--shadow-s);position:relative;
+}
+.quote p{font-size:14.2px;line-height:1.72;color:var(--ink);font-weight:500}
+.quote .who{display:flex;align-items:center;gap:10px;margin-top:14px}
+.quote .who .av{width:30px;height:30px;border-radius:50%;overflow:hidden;flex:none}
+.quote .who .av svg{width:100%;height:100%}
+.quote .who b{font-size:13px}
+.quote .who span{font-size:11.5px;color:var(--ink3);font-weight:600}
+
+/* ============ 时间线 ============ */
+.timeline{position:relative;margin-top:14px;padding-left:26px}
+.timeline::before{content:"";position:absolute;left:6px;top:8px;bottom:8px;width:2px;background:linear-gradient(180deg,rgba(255,95,126,.6),rgba(127,143,244,.35),transparent)}
+.tl-item{position:relative;padding-bottom:34px}
+.tl-item:last-child{padding-bottom:0}
+.tl-item::before{
+  content:"";position:absolute;left:-26px;top:7px;width:14px;height:14px;border-radius:50%;
+  background:#fff;border:3px solid var(--brand);box-shadow:0 0 0 4px rgba(255,95,126,.12);
+}
+.tl-item .yr{font-size:12.5px;font-weight:800;letter-spacing:.14em;color:var(--brand)}
+.tl-item h4{font-size:16.5px;margin:5px 0 6px}
+.tl-item p{font-size:14px;line-height:1.7}
+
+/* ============ 订阅 CTA ============ */
+.cta{
+  position:relative;overflow:hidden;border-radius:30px;padding:66px 52px;text-align:center;
+  background:var(--grad);color:#fff;box-shadow:0 46px 80px -46px rgba(255,95,126,.9);
+}
+.cta::before,.cta::after{content:"";position:absolute;border-radius:50%;background:rgba(255,255,255,.13)}
+.cta::before{width:320px;height:320px;left:-110px;top:-130px}
+.cta::after{width:260px;height:260px;right:-90px;bottom:-120px}
+.cta .inner{position:relative;z-index:1}
+.cta h2{color:#fff;margin-bottom:14px}
+.cta p{color:rgba(255,255,255,.88);max-width:580px;margin:0 auto;font-size:15.5px}
+.subscribe{display:flex;gap:12px;max-width:520px;margin:30px auto 0;flex-wrap:wrap}
+.subscribe input{
+  flex:1;min-width:220px;padding:15px 20px;border-radius:14px;border:none;font-size:14.5px;
+  font-family:inherit;color:var(--ink);outline:none;box-shadow:0 12px 30px -16px rgba(0,0,0,.4);
+}
+.subscribe input::placeholder{color:#a6adbd}
+.subscribe .btn{background:#141a2c;color:#fff;box-shadow:0 16px 34px -16px rgba(0,0,0,.6)}
+.subscribe .btn:hover{transform:translateY(-2px)}
+.cta .note{font-size:12.5px;color:rgba(255,255,255,.72);margin-top:16px}
+.form-msg{font-size:13px;font-weight:700;color:#fff;margin-top:14px;min-height:20px}
+
+/* ============ FAQ ============ */
+.faq-list{max-width:860px;margin-inline:auto;display:grid;gap:14px}
+.faq-item{background:#fff;border:1px solid var(--line);border-radius:16px;overflow:hidden;box-shadow:var(--shadow-s);transition:.22s}
+.faq-item:hover{border-color:rgba(255,95,126,.3)}
+.faq-q{
+  width:100%;display:flex;align-items:center;justify-content:space-between;gap:18px;
+  padding:20px 24px;text-align:left;font-size:15.5px;font-weight:700;color:var(--ink);
+}
+.faq-q .sign{position:relative;width:20px;height:20px;flex:none}
+.faq-q .sign::before,.faq-q .sign::after{
+  content:"";position:absolute;background:var(--brand);border-radius:2px;transition:.26s;
+}
+.faq-q .sign::before{left:0;top:9px;width:20px;height:2.5px}
+.faq-q .sign::after{left:9px;top:0;width:2.5px;height:20px}
+.faq-item.open .sign::after{transform:rotate(90deg);opacity:0}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .34s ease}
+.faq-a p{padding:0 24px 22px;font-size:14.2px;line-height:1.75}
+.faq-item.open .faq-a{max-height:340px}
+
+/* ============ 页脚 ============ */
+footer{background:#10141f;color:rgba(255,255,255,.72);padding:66px 0 30px;margin-top:84px}
+.f-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr 1.2fr;gap:44px}
+.f-brand .logo{color:#fff}
+.f-brand .logo small{color:rgba(255,255,255,.4)}
+.f-brand p{font-size:13.8px;line-height:1.8;margin-top:16px;color:rgba(255,255,255,.58);max-width:330px}
+.f-social{display:flex;gap:10px;margin-top:20px}
+.f-social a{
+  width:38px;height:38px;border-radius:11px;display:grid;place-items:center;
+  background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.1);transition:.22s;
+}
+.f-social a svg{width:17px;height:17px;fill:rgba(255,255,255,.7);transition:.22s}
+.f-social a:hover{background:var(--brand);border-color:var(--brand);transform:translateY(-3px)}
+.f-social a:hover svg{fill:#fff}
+.f-col h5{font-size:13px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:#fff;margin-bottom:16px}
+.f-col ul{display:grid;gap:10px}
+.f-col a{font-size:13.8px;color:rgba(255,255,255,.58);transition:.2s}
+.f-col a:hover{color:#fff}
+.f-news p{font-size:13.8px;color:rgba(255,255,255,.58);line-height:1.7}
+.f-news form{display:flex;gap:8px;margin-top:14px}
+.f-news input{
+  flex:1;min-width:0;padding:11px 14px;border-radius:11px;border:1px solid rgba(255,255,255,.14);
+  background:rgba(255,255,255,.06);color:#fff;font-family:inherit;font-size:13.5px;outline:none;
+}
+.f-news input::placeholder{color:rgba(255,255,255,.35)}
+.f-news input:focus{border-color:rgba(255,95,126,.6)}
+.f-news button{padding:11px 16px;border-radius:11px;background:var(--brand);color:#fff;font-weight:700;font-size:13.5px;transition:.2s}
+.f-news button:hover{filter:brightness(1.06)}
+.f-note{font-size:12px;margin-top:10px;color:rgba(255,255,255,.3)}
+.f-bottom{
+  margin-top:52px;padding-top:26px;border-top:1px solid rgba(255,255,255,.09);
+  display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap;
+  font-size:12.8px;color:rgba(255,255,255,.4);
+}
+.f-bottom .links{display:flex;gap:20px;flex-wrap:wrap}
+.f-bottom a:hover{color:#fff}
+
+/* ============ 滚动进入动画 ============ */
+.reveal{opacity:0;transform:translateY(26px);transition:opacity .7s cubic-bezier(.2,.7,.3,1),transform .7s cubic-bezier(.2,.7,.3,1)}
+.reveal.in{opacity:1;transform:none}
+
+/* 回到顶部 */
+.to-top{
+  position:fixed;right:24px;bottom:26px;width:48px;height:48px;border-radius:14px;z-index:80;
+  background:#fff;border:1px solid var(--line);display:grid;place-items:center;
+  box-shadow:0 16px 34px -18px rgba(30,40,80,.5);opacity:0;pointer-events:none;transition:.28s;
+}
+.to-top.show{opacity:1;pointer-events:auto}
+.to-top:hover{transform:translateY(-3px);border-color:rgba(255,95,126,.4)}
+.to-top svg{width:18px;height:18px;fill:none;stroke:var(--brand);stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round}
+
+/* 进度条 */
+.progress{position:fixed;left:0;top:0;height:3px;width:0;z-index:100;background:var(--grad);transition:width .1s linear}
+
+/* ============ 响应式 ============ */
+@media(max-width:1080px){
+  .channels{grid-template-columns:repeat(2,1fr)}
+  .team-grid{grid-template-columns:repeat(2,1fr)}
+  .hero-grid{grid-template-columns:1fr;gap:42px}
+  .about-grid{grid-template-columns:1fr;gap:38px}
+  .community{grid-template-columns:1fr;gap:36px}
+  .feature-band{grid-template-columns:1fr;padding:40px}
+  .f-grid{grid-template-columns:1fr 1fr;gap:34px}
+  .float-badge{right:10px}
+}
+@media(max-width:860px){
+  .nav-links{display:none}
+  .nav-toggle{display:grid}
+  .nav-cta .btn-ghost{display:none}
+  .nav.open .nav-links{
+    display:flex;position:absolute;left:0;right:0;top:72px;background:#fff;flex-direction:column;
+    padding:14px 22px 20px;border-bottom:1px solid var(--line);box-shadow:0 24px 40px -24px rgba(30,40,80,.35);gap:2px;
+  }
+  .nav.open .nav-links a{padding:12px 8px}
+  section{padding:66px 0}
+  .video-grid{grid-template-columns:1fr 1fr}
+  .values{grid-template-columns:1fr}
+}
+@media(max-width:640px){
+  .wrap{width:calc(100% - 32px)}
+  .video-grid{grid-template-columns:1fr}
+  .channels{grid-template-columns:1fr}
+  .team-grid{grid-template-columns:1fr}
+  .hero-stats{gap:22px}
+  .feature-band{padding:30px 24px;border-radius:22px}
+  .fb-stats{grid-template-columns:1fr}
+  .cta{padding:48px 24px;border-radius:22px}
+  .f-grid{grid-template-columns:1fr}
+  .stat-grid{grid-template-columns:1fr}
+  .logos-inner{gap:20px}
+  .logos-inner ul{gap:22px}
+  .subscribe{flex-direction:column}
+  .subscribe .btn{width:100%}
+  .player-card{aspect-ratio:4/3.4}
+  .play-btn{width:64px;height:64px}
+}
+@media(prefers-reduced-motion:reduce){
+  *{animation:none!important;transition:none!important}
+  .reveal{opacity:1;transform:none}
+}
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<div class="progress" id="progress" aria-hidden="true"></div>
+
+<!-- ============ 导航 ============ -->
+<header class="topbar">
+  <div class="wrap">
+    <nav class="nav" id="nav">
+      <a class="logo" href="#top" aria-label="清纯校花的被擒日常tx 首页">
+        <span class="mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M8 5.2c0-.9 1-1.5 1.8-1l8 5.3c.8.5.8 1.6 0 2.1l-8 5.3c-.8.5-1.8-.1-1.8-1V5.2z"/><rect x="3" y="4" width="2.4" height="16" rx="1.2"/></svg>
+        </span>
+        <span>清纯校花的被擒日常tx<small>QINGCHUN · FILM STUDIO</small></span>
+      </a>
+      <div class="nav-links" id="navlinks">
+        <a href="#about">品牌故事</a>
+        <a href="#channels">内容矩阵</a>
+        <a href="#works">精选作品</a>
+        <a href="#team">创作团队</a>
+        <a href="#community">社区数据</a>
+        <a href="#faq">常见问题</a>
+      </div>
+      <div class="nav-cta">
+        <a class="btn btn-ghost" href="#works">浏览片单</a>
+        <a class="btn btn-primary" href="#join">加入社区</a>
+        <button class="nav-toggle" id="navToggle" aria-label="展开菜单" aria-expanded="false"><span></span></button>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero">
+    <div class="wrap">
+      <div class="hero-grid">
+        <div class="reveal">
+          <span class="eyebrow">青春纪实 · 影像品牌</span>
+          <h1>清纯校花的被擒日常tx，<span class="grad">把每个平凡日常拍成光</span></h1>
+          <p class="hero-lead">
+            我们是一支专注青年生活纪实的视频团队。以清纯校花的被擒日常tx为内容母题，用镜头记录校园里的相遇、奔跑、独白与和解，
+            让那些你以为无人留意的瞬间，被认真保存下来。
+          </p>
+          <div class="hero-tags">
+            <span class="tag">校园日常</span>
+            <span class="tag">青春纪实</span>
+            <span class="tag">剧情短片</span>
+            <span class="tag">人物访谈</span>
+            <span class="tag">4K 影像</span>
+          </div>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#works">
+              观看最新一期
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+            <a class="btn btn-ghost" href="#about">了解我们</a>
+          </div>
+          <div class="hero-stats">
+            <div>
+              <div class="num">380<span>+</span></div>
+              <div class="lbl">原创短片</div>
+            </div>
+            <div>
+              <div class="num">1.2<span>亿</span></div>
+              <div class="lbl">累计播放</div>
+            </div>
+            <div>
+              <div class="num">26<span>万</span></div>
+              <div class="lbl">社区成员</div>
+            </div>
+            <div>
+              <div class="num">4.9<span>分</span></div>
+              <div class="lbl">观众评分</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="reveal" style="position:relative">
+          <div class="player-card">
+            <div class="art" aria-hidden="true">
+              <svg viewBox="0 0 640 496" preserveAspectRatio="xMidYMid slice" role="img" aria-label="青春校园影像画面">
+                <defs>
+                  <linearGradient id="skyA" x1="0" y1="0" x2="1" y2="1">
+                    <stop offset="0" stop-color="#ffd7e1"/>
+                    <stop offset="45%" stop-color="#ffb4c8"/>
+                    <stop offset="100%" stop-color="#9aa8ff"/>
+                  </linearGradient>
+                  <linearGradient id="groundA" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="0" stop-color="#6f7ce0"/>
+                    <stop offset="100%" stop-color="#2a2f57"/>
+                  </linearGradient>
+                  <linearGradient id="sunA" x1="0" y1="0" x2="1" y2="1">
+                    <stop offset="0" stop-color="#fff6e0"/>
+                    <stop offset="100%" stop-color="#ffd0dc"/>
+                  </linearGradient>
+                  <linearGradient id="bldg" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="0" stop-color="#3d4470"/>
+                    <stop offset="100%" stop-color="#232847"/>
+                  </linearGradient>
+                </defs>
+                <rect width="640" height="496" fill="url(#skyA)"/>
+                <circle cx="470" cy="128" r="76" fill="url(#sunA)" opacity=".92"/>
+                <circle cx="470" cy="128" r="112" fill="#fff3e6" opacity=".18"/>
+                <!-- 云 -->
+                <g fill="#ffffff" opacity=".5">
+                  <ellipse cx="128" cy="96" rx="64" ry="22"/>
+                  <ellipse cx="172" cy="84" rx="44" ry="18"/>
+                  <ellipse cx="300" cy="58" rx="52" ry="16"/>
+                  <ellipse cx="336" cy="50" rx="34" ry="13"/>
+                  <ellipse cx="560" cy="66" rx="46" ry="15"/>
+                </g>
+                <!-- 远山 -->
+                <path d="M0 250 L110 182 L214 244 L320 176 L430 246 L540 190 L640 246 L640 300 L0 300 Z" fill="#8e9bf0" opacity=".55"/>
+                <path d="M0 278 L96 226 L206 282 L318 224 L440 286 L556 232 L640 280 L640 320 L0 320 Z" fill="#6e7ad6" opacity=".6"/>
+                <!-- 建筑群 -->
+                <g fill="url(#bldg)">
+                  <rect x="36" y="238" width="86" height="130" rx="6"/>
+                  <rect x="132" y="262" width="64" height="106" rx="6"/>
+                  <rect x="470" y="248" width="76" height="120" rx="6"/>
+                  <rect x="556" y="270" width="58" height="98" rx="6"/>
+                </g>
+                <!-- 窗户 -->
+                <g fill="#ffd9a8" opacity=".72">
+                  <rect x="50" y="254" width="12" height="16" rx="2"/><rect x="72" y="254" width="12" height="16" rx="2"/><rect x="94" y="254" width="12" height="16" rx="2"/>
+                  <rect x="50" y="284" width="12" height="16" rx="2"/><rect x="94" y="284" width="12" height="16" rx="2"/>
+                  <rect x="146" y="278" width="11" height="14" rx="2"/><rect x="168" y="278" width="11" height="14" rx="2"/>
+                  <rect x="146" y="306" width="11" height="14" rx="2"/><rect x="168" y="306" width="11" height="14" rx="2"/>
+                  <rect x="484" y="262" width="12" height="16" rx="2"/><rect x="508" y="262" width="12" height="16" rx="2"/><rect x="530" y="262" width="12" height="16" rx="2"/>
+                  <rect x="508" y="292" width="12" height="16" rx="2"/>
+                  <rect x="570" y="284" width="11" height="14" rx="2"/><rect x="592" y="284" width="11" height="14" rx="2"/>
+                </g>
+                <!-- 操场地面 -->
+                <path d="M0 368 Q320 336 640 368 L640 496 L0 496 Z" fill="url(#groundA)"/>
+                <ellipse cx="320" cy="430" rx="330" ry="82" fill="#4a56a8" opacity=".45"/>
+                <!-- 跑道线 -->
+                <g stroke="#ffd6e2" stroke-width="2" opacity=".38" fill="none">
+                  <path d="M24 440 Q320 396 616 440"/>
+                  <path d="M10 462 Q320 418 630 462"/>
+                  <path d="M-4 486 Q320 440 644 486"/>
+                </g>
+                <!-- 人物：奔跑的少年 -->
+                <g transform="translate(300,362)">
+                  <ellipse cx="0" cy="86" rx="42" ry="9" fill="#1b2040" opacity=".35"/>
+                  <circle cx="2" cy="6" r="14" fill="#3a4270"/>
+                  <path d="M-6 22 q10 -6 20 0 l4 30 q-14 6 -28 0 z" fill="#ff8fa8"/>
+                  <path d="M-4 52 l-8 28" stroke="#3a4270" stroke-width="7" stroke-linecap="round"/>
+                  <path d="M14 52 l10 24" stroke="#3a4270" stroke-width="7" stroke-linecap="round"/>
+                  <path d="M-8 26 l-18 12" stroke="#ff8fa8" stroke-width="6" stroke-linecap="round"/>
+                  <path d="M20 26 l18 -12" stroke="#ff8fa8" stroke-width="6" stroke-linecap="round"/>
+                  <rect x="-8" y="80" width="16" height="6" rx="3" fill="#1b2040"/>
+                  <rect x="14" y="76" width="16" height="6" rx="3" fill="#1b2040"/>
+                </g>
+                <!-- 人物：并肩的同学 -->
+                <g transform="translate(368,376)">
+                  <ellipse cx="0" cy="74" rx="34" ry="8" fill="#1b2040" opacity=".3"/>
+                  <circle cx="0" cy="4" r="12" fill="#2f3660"/>
+                  <path d="M-8 20 q8 -5 16 0 l3 26 q-11 5 -22 0 z" fill="#8f9bff"/>
+                  <path d="M-5 46 l-6 24" stroke="#2f3660" stroke-width="6" stroke-linecap="round"/>
+                  <path d="M6 46 l7 22" stroke="#2f3660" stroke-width="6" stroke-linecap="round"/>
+                </g>
+                <!-- 前景草丛 -->
+                <g fill="#39406e" opacity=".8">
+                  <path d="M40 496 q6 -46 16 -66 q2 34 -2 66z"/>
+                  <path d="M62 496 q10 -38 22 -54 q-2 28 -8 54z"/>
+                  <path d="M596 496 q-6 -46 -16 -66 q-2 34 2 66z"/>
+                  <path d="M574 496 q-10 -38 -22 -54 q2 28 8 54z"/>
+                </g>
+                <!-- 飘落花瓣 -->
+                <g fill="#fff1f5" opacity=".8">
+                  <circle cx="120" cy="150" r="3"/><circle cx="196" cy="196" r="2.4"/><circle cx="256" cy="128" r="2.8"/>
+                  <circle cx="404" cy="166" r="2.6"/><circle cx="520" cy="206" r="3"/><circle cx="88" cy="230" r="2.2"/>
+                  <circle cx="330" cy="232" r="2.4"/><circle cx="580" cy="150" r="2.6"/>
+                </g>
+              </svg>
+            </div>
+            <div class="scrim" aria-hidden="true"></div>
+            <button class="play-btn" id="playBtn" aria-label="播放预告片">
+              <svg viewBox="0 0 24 24"><path d="M8 5.2c0-.9 1-1.5 1.8-1l8 5.3c.8.5.8 1.6 0 2.1l-8 5.3c-.8.5-1.8-.1-1.8-1V5.2z"/></svg>
+            </button>
+            <div class="player-meta">
+              <div class="kicker">本周首播</div>
+              <h3>《被擒的日常 · 操场边的第七分钟》</h3>
+              <div class="row">
+                <span class="live"><span class="dot-live"></span>正在直播</span>
+                <span>4K HDR</span>
+                <span>时长 18:42</span>
+                <span>3,842 人在看</span>
+              </div>
+            </div>
+          </div>
+          <div class="float-badge">
+            <span class="pulse"></span>
+            <div>
+              <b>今晚 20:00 更新</b>
+              <small>第 12 期 · 天台独白</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 合作品牌 ============ -->
+  <div class="logos">
+    <div class="wrap logos-inner">
+      <span class="cap">联合出品 / 平台合作</span>
+      <ul>
+        <li>光影青年电影节</li>
+        <li>校园影像计划</li>
+        <li>青柠视频</li>
+        <li>拾帧工作室</li>
+        <li>半夏传媒</li>
+        <li>回声放映厅</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- ============ 品牌故事 ============ -->
+  <section id="about">
+    <div class="wrap">
+      <div class="about-grid">
+        <div class="about-visual reveal">
+          <div class="frame">
+            <svg viewBox="0 0 600 480" preserveAspectRatio="xMidYMid slice" role="img" aria-label="品牌影像工作室场景">
+              <defs>
+                <linearGradient id="wallG" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0" stop-color="#fdeef2"/>
+                  <stop offset="100%" stop-color="#e9edfb"/>
+                </linearGradient>
+                <linearGradient id="deskG" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0" stop-color="#cfd6ee"/>
+                  <stop offset="100%" stop-color="#aab3d6"/>
+                </linearGradient>
+                <linearGradient id="winG" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0" stop-color="#fff2c8"/>
+                  <stop offset="100%" stop-color="#ffd6a8"/>
+                </linearGradient>
+              </defs>
+              <rect width="600" height="480" fill="url(#wallG)"/>
+              <!-- 窗户 -->
+              <rect x="360" y="56" width="190" height="150" rx="10" fill="url(#winG)" opacity=".9"/>
+              <g stroke="#e2b98f" stroke-width="4">
+                <line x1="455" y1="56" x2="455" y2="206"/>
+                <line x1="360" y1="131" x2="550" y2="131"/>
+              </g>
+              <rect x="360" y="56" width="190" height="150" rx="10" fill="none" stroke="#d8b494" stroke-width="6"/>
+              <!-- 光斑 -->
+              <ellipse cx="440" cy="270" rx="150" ry="52" fill="#ffe6bf" opacity=".35"/>
+              <!-- 置物架 -->
+              <rect x="52" y="94" width="220" height="12" rx="6" fill="#c9a98f"/>
+              <g fill="#8f9bd6">
+                <rect x="70" y="42" width="16" height="52" rx="3"/>
+                <rect x="92" y="52" width="14" height="42" rx="3" fill="#f2a2b8"/>
+                <rect x="112" y="36" width="18" height="58" rx="3" fill="#a9b4ea"/>
+                <rect x="136" y="56" width="13" height="38" rx="3" fill="#ffb3c6"/>
+                <rect x="156" y="46" width="16" height="48" rx="3" fill="#98a3de"/>
+              </g>
+              <!-- 相机架 -->
+              <g transform="translate(74,196)">
+                <rect x="0" y="0" width="56" height="38" rx="8" fill="#3d4470"/>
+                <circle cx="28" cy="19" r="13" fill="#5a6499"/>
+                <circle cx="28" cy="19" r="7" fill="#20263f"/>
+                <path d="M10 38 l-8 62 M46 38 l8 62 M28 38 l0 62" stroke="#3d4470" stroke-width="5" stroke-linecap="round"/>
+                <rect x="24" y="-10" width="22" height="10" rx="3" fill="#3d4470"/>
+              </g>
+              <!-- 桌面 -->
+              <rect x="40" y="330" width="520" height="26" rx="12" fill="url(#deskG)"/>
+              <rect x="70" y="356" width="20" height="96" rx="8" fill="#b6bfe0"/>
+              <rect x="510" y="356" width="20" height="96" rx="8" fill="#b6bfe0"/>
+              <!-- 显示器 -->
+              <g transform="translate(196,214)">
+                <rect x="0" y="0" width="212" height="126" rx="10" fill="#2a3050"/>
+                <rect x="10" y="10" width="192" height="98" rx="6" fill="#3f4a7a"/>
+                <path d="M26 38 h150 M26 56 h110 M26 74 h132" stroke="#8fa0e0" stroke-width="6" stroke-linecap="round" opacity=".8"/>
+                <rect x="88" y="126" width="36" height="16" rx="4" fill="#2a3050"/>
+                <rect x="58" y="142" width="96" height="10" rx="5" fill="#2a3050"/>
+              </g>
+              <!-- 桌上物件 -->
+              <rect x="100" y="300" width="56" height="30" rx="5" fill="#fff" stroke="#dfe4f2"/>
+              <path d="M110 308 h36 M110 316 h24" stroke="#c3cade" stroke-width="3" stroke-linecap="round"/>
+              <g transform="translate(440,286)">
+                <path d="M0 44 q0 -34 20 -44 q20 10 20 44 z" fill="#ffd8e2"/>
+                <path d="M20 0 v44" stroke="#e79aae" stroke-width="2.4"/>
+                <path d="M20 12 q-10 6 -12 18" stroke="#e79aae" stroke-width="2.4" fill="none"/>
+              </g>
+              <circle cx="500" cy="300" r="14" fill="#ffc48a"/>
+              <rect x="486" y="300" width="28" height="30" rx="5" fill="#e8a86a" opacity=".6"/>
+              <!-- 海报 -->
+              <g transform="translate(300,52)">
+                <rect x="0" y="0" width="46" height="62" rx="5" fill="#ffb1c4"/>
+                <path d="M8 46 q14 -26 30 -4" stroke="#fff" stroke-width="4" fill="none" stroke-linecap="round"/>
+                <circle cx="16" cy="18" r="6" fill="#fff" opacity=".9"/>
+              </g>
+              <!-- 地面 -->
+              <rect x="0" y="440" width="600" height="40" fill="#dfe4f4"/>
+            </svg>
+            <div class="frame-cap">光影工作室 · 主创后期间</div>
+          </div>
+        </div>
+
+        <div class="reveal">
+          <span class="eyebrow">品牌故事</span>
+          <h2>从一个校园社团，<br>到一支认真的影像团队</h2>
+          <p>
+            2019 年，几个人在传媒学院的剪辑室熬了三个通宵，剪出一支 6 分钟的短片《放学后》。片子上线后，评论区里有人说，
+            好像看到了自己。那一刻我们决定，把清纯校花的被擒日常tx这组内容，做成一件长期的事。
+          </p>
+          <p style="margin-top:14px">
+            今天，团队已在 12 个城市留下拍摄记录点，与 40 余所高校影像社团保持合作。我们仍然坚持一条朴素的准则：
+            先做人，再拍片。所有剧情取材于真实投稿，所有讲述都经当事人确认。
+          </p>
+          <div class="about-points">
+            <div class="point">
+              <span class="ic" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M12 3l7.5 3.4v5.1c0 4.3-3 8.1-7.5 9.5-4.5-1.4-7.5-5.2-7.5-9.5V6.4L12 3z"/><path d="M9 12l2 2 4-4"/></svg>
+              </span>
+              <div>
+                <h4>真实优先</h4>
+                <p>拒绝摆拍式煽情，每个故事都来自投稿人和亲历者的第一人称叙述。</p>
+              </div>
+            </div>
+            <div class="point">
+              <span class="ic" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 1.8"/></svg>
+              </span>
+              <div>
+                <h4>长期主义</h4>
+                <p>不追热搜节奏，愿意花一个月等一场合适的黄昏和一位合适的讲述者。</p>
+              </div>
+            </div>
+            <div class="point">
+              <span class="ic" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M4 17V9a3 3 0 013-3h4l3-3h0a3 3 0 013 3v11"/><circle cx="9" cy="14" r="2.2"/><path d="M4 20h16"/></svg>
+              </span>
+              <div>
+                <h4>开放共创</h4>
+                <p>片单、脚本、配乐都对社区开放，观众可以参与一次投票，也可以加入一次拍摄。</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="values" style="grid-template-columns:repeat(3,1fr)">
+        <div class="value-card reveal">
+          <div class="no">01 / 真实</div>
+          <h4>把日常拍出质感</h4>
+          <p>不制造戏剧冲突，而是把镜头放低一点、靠近一点，去捕捉那些真正发生了的小事。</p>
+        </div>
+        <div class="value-card reveal">
+          <div class="no">02 / 克制</div>
+          <h4>少一些解释，多一些留白</h4>
+          <p>我们相信观众的理解力。画面之外的空白，往往比旁白更有力量。</p>
+        </div>
+        <div class="value-card reveal">
+          <div class="no">03 / 同行</div>
+          <h4>和观众一起长大</h4>
+          <p>从第一支短片到现在，社区里的很多人从观众变成了主创，这是最珍贵的部分。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 内容矩阵 ============ -->
+  <section id="channels" class="bg-soft">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">内容矩阵</span>
+        <h2>四条主线，持续更新</h2>
+        <p>我们把清纯校花的被擒日常tx拆成四种讲述方式：短剧、纪实、访谈与音乐影像。每周三、周六固定更新，节假日常有特别企划。</p>
+      </div>
+
+      <div class="channels">
+        <article class="channel-card reveal">
+          <span class="ic" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="M10 9.5l5 2.5-5 2.5v-5z"/></svg>
+          </span>
+          <h4>日常短剧</h4>
+          <p>每集 6～15 分钟，以校园日常为背景，讲述一段关系里的微妙转折。适合下饭，也适合看完发会儿呆。</p>
+          <span class="more">查看合集 <svg viewBox="0 0 24 24"><path d="M5 12h13M12 5l7 7-7 7"/></svg></span>
+        </article>
+
+        <article class="channel-card reveal">
+          <span class="ic" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M12 3.5v17M3.5 12h17"/></svg>
+          </span>
+          <h4>青春纪实</h4>
+          <p>跟拍真实的学生生活，从早八的困倦到图书馆闭馆的音乐，纪录不作修饰的一年四季。</p>
+          <span class="more">查看合集 <svg viewBox="0 0 24 24"><path d="M5 12h13M12 5l7 7-7 7"/></svg></span>
+        </article>
+
+        <article class="channel-card reveal">
+          <span class="ic" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M4 5h16v11H9l-5 4V5z"/><path d="M8 10h8M8 13h5"/></svg>
+          </span>
+          <h4>人物访谈</h4>
+          <p>一次两人、一盏灯的长时间对话。聊成长、聊犹豫，也聊那些没被说出口的谢谢。</p>
+          <span class="more">查看合集 <svg viewBox="0 0 24 24"><path d="M5 12h13M12 5l7 7-7 7"/></svg></span>
+        </article>
+
+        <article class="channel-card reveal">
+          <span class="ic" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M9 18V6l10-2v12"/><circle cx="6.5" cy="18" r="2.5"/><circle cx="16.5" cy="16" r="2.5"/></svg>
+          </span>
+          <h4>音乐影像</h4>
+          <p>为独立音乐人拍摄现场与 MV，把一首歌交给一段熟悉的走廊、一次逆光的回头。</p>
+          <span class="more">查看合集 <svg viewBox="0 0 24 24"><path d="M5 12h13M12 5l7 7-7 7"/></svg></span>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 精选作品 ============ -->
+  <section id="works">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">精选作品</span>
+        <h2>最近被反复播放的几支片子</h2>
+        <p>从 380 多支作品中挑出本季最受欢迎的一组。点击卡片可查看完整简介与幕后手记。</p>
+      </div>
+
+      <div class="filter-row reveal" id="filters" role="tablist" aria-label="作品分类筛选">
+        <button class="chip active" data-cat="all" role="tab" aria-selected="true">全部</button>
+        <button class="chip" data-cat="drama" role="tab" aria-selected="false">日常短剧</button>
+        <button class="chip" data-cat="doc" role="tab" aria-selected="false">青春纪实</button>
+        <button class="chip" data-cat="talk" role="tab" aria-selected="false">人物访谈</button>
+        <button class="chip" data-cat="music" role="tab" aria-selected="false">音乐影像</button>
+      </div>
+
+      <div class="video-grid" id="videoGrid">
+
+        <article class="v-card reveal" data-cat="drama">
+          <div class="v-thumb">
+            <svg viewBox="0 0 480 300" preserveAspectRatio="xMidYMid slice" role="img" aria-label="日常短剧封面">
+              <defs><linearGradient id="t1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffe1e9"/><stop offset="100%" stop-color="#b8c2ff"/></linearGradient></defs>
+              <rect width="480" height="300" fill="url(#t1)"/>
+              <circle cx="374" cy="70" r="46" fill="#fff3d6" opacity=".85"/>
+              <path d="M0 216 Q240 176 480 216 L480 300 L0 300Z" fill="#7b87e6" opacity=".55"/>
+              <g transform="translate(226,128)">
+                <ellipse cx="0" cy="94" rx="40" ry="8" fill="#3a4270" opacity=".3"/>
+                <circle cx="0" cy="0" r="17" fill="#3a4270"/>
+                <path d="M-13 20 q13 -7 26 0 l5 40 q-18 7 -36 0z" fill="#ff8fa8"/>
+                <path d="M-10 62 l-8 32M12 62 l8 30" stroke="#3a4270" stroke-width="8" stroke-linecap="round"/>
+              </g>
+              <g stroke="#fff" stroke-width="3" opacity=".55" fill="none">
+                <path d="M60 246 Q240 214 420 246"/>
+                <path d="M40 268 Q240 236 440 268"/>
+              </g>
+            </svg>
+            <span class="v-cat">日常短剧</span>
+            <span class="v-dur">09:12</span>
+          </div>
+          <div class="v-body">
+            <h4>《第七节课后的走廊》</h4>
+            <p>两个人隔着三米并排走着，谁也没有先开口。这部片子的全部台词只有四句。</p>
+            <div class="v-foot">
+              <span class="views"><svg viewBox="0 0 24 24"><path d="M2 12s3.6-6.5 10-6.5S22 12 22 12s-3.6 6.5-10 6.5S2 12 2 12z"/><circle cx="12" cy="12" r="2.6"/></svg>128.4 万</span>
+              <span>2024 · 第 11 期</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="v-card reveal" data-cat="doc">
+          <div class="v-thumb">
+            <svg viewBox="0 0 480 300" preserveAspectRatio="xMidYMid slice" role="img" aria-label="青春纪实封面">
+              <defs><linearGradient id="t2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#d9e6ff"/><stop offset="100%" stop-color="#9db4ff"/></linearGradient></defs>
+              <rect width="480" height="300" fill="url(#t2)"/>
+              <g fill="#fff" opacity=".66">
+                <ellipse cx="96" cy="66" rx="52" ry="18"/><ellipse cx="134" cy="56" rx="36" ry="14"/>
+                <ellipse cx="384" cy="92" rx="46" ry="15"/>
+              </g>
+              <rect x="60" y="96" width="70" height="130" rx="6" fill="#4a5490" opacity=".8"/>
+              <rect x="148" y="126" width="52" height="100" rx="6" fill="#5c67a8" opacity=".8"/>
+              <rect x="356" y="112" width="64" height="114" rx="6" fill="#4a5490" opacity=".8"/>
+              <g fill="#ffe6a8" opacity=".8">
+                <rect x="72" y="112" width="10" height="13" rx="2"/><rect x="92" y="112" width="10" height="13" rx="2"/><rect x="112" y="112" width="10" height="13" rx="2"/>
+                <rect x="72" y="140" width="10" height="13" rx="2"/><rect x="112" y="140" width="10" height="13" rx="2"/>
+                <rect x="368" y="128" width="10" height="13" rx="2"/><rect x="390" y="128" width="10" height="13" rx="2"/>
+              </g>
+              <path d="M0 226 Q240 200 480 226 L480 300 L0 300Z" fill="#6c7ad8" opacity=".6"/>
+              <g transform="translate(252,180)">
+                <circle cx="0" cy="0" r="13" fill="#2f3660"/>
+                <path d="M-10 15 q10 -6 20 0 l4 30 q-14 6 -28 0z" fill="#fff"/>
+                <path d="M-8 47 l-6 22M8 47 l6 22" stroke="#2f3660" stroke-width="6" stroke-linecap="round"/>
+              </g>
+            </svg>
+            <span class="v-cat">青春纪实</span>
+            <span class="v-dur">24:05</span>
+          </div>
+          <div class="v-body">
+            <h4>《早八人的一天，从六点四十开始》</h4>
+            <p>跟拍三位不同专业的学生，记录他们从起床到熄灯的一天。没有旁白，只有环境声。</p>
+            <div class="v-foot">
+              <span class="views"><svg viewBox="0 0 24 24"><path d="M2 12s3.6-6.5 10-6.5S22 12 22 12s-3.6 6.5-10 6.5S2 12 2 12z"/><circle cx="12" cy="12" r="2.6"/></svg>96.7 万</span>
+              <span>2024 · 纪实 08</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="v-card reveal" data-cat="talk">
+          <div class="v-thumb">
+            <svg viewBox="0 0 480 300" preserveAspectRatio="xMidYMid slice" role="img" aria-label="人物访谈封面">
+              <defs><linearGradient id="t3" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffe9d9"/><stop offset="100%" stop-color="#ffc2d3"/></linearGradient></defs>
+              <rect width="480" height="300" fill="url(#t3)"/>
+              <circle cx="240" cy="130" r="86" fill="#fff" opacity=".38"/>
+              <g transform="translate(240,120)">
+                <circle cx="0" cy="0" r="36" fill="#3a4270"/>
+                <path d="M-30 34 q30 -16 60 0 l10 84 q-40 16 -80 0z" fill="#6f7ce0"/>
+                <path d="M-22 40 q22 28 44 0" stroke="#fff" stroke-width="2.4" fill="none" opacity=".5"/>
+              </g>
+              <g stroke="#fff" stroke-width="2.4" opacity=".6" fill="none">
+                <path d="M70 246 Q240 214 410 246"/><path d="M48 268 Q240 234 432 268"/>
+              </g>
+              <g fill="#fff" opacity=".7">
+                <circle cx="96" cy="60" r="4"/><circle cx="398" cy="52" r="3"/><circle cx="360" cy="88" r="2.4"/>
+              </g>
+            </svg>
+            <span class="v-cat">人物访谈</span>
+            <span class="v-dur">32:18</span>
+          </div>
+          <div class="v-body">
+            <h4>《她说，那年最想被听见的一句话》</h4>
+            <p>六位受访者，一个问题，一次没有提纲的对话。有人说到一半停了下来。</p>
+            <div class="v-foot">
+              <span class="views"><svg viewBox="0 0 24 24"><path d="M2 12s3.6-6.5 10-6.5S22 12 22 12s-3.6 6.5-10 6.5S2 12 2 12z"/><circle cx="12" cy="12" r="2.6"/></svg>74.2 万</span>
+              <span>2024 · 访谈 05</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="v-card reveal" data-cat="music">
+          <div class="v-thumb">
+            <svg viewBox="0 0 480 300" preserveAspectRatio="xMidYMid slice" role="img" aria-label="音乐影像封面">
+              <defs><linearGradient id="t4" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#2a2f57"/><stop offset="60%" stop-color="#5a4b95"/><stop offset="100%" stop-color="#ff8fa8"/></linearGradient></defs>
+              <rect width="480" height="300" fill="url(#t4)"/>
+              <circle cx="356" cy="82" r="40" fill="#ffe9c4" opacity=".9"/>
+              <g fill="#fff" opacity=".55">
+                <circle cx="80" cy="52" r="2.6"/><circle cx="140" cy="36" r="2"/><circle cx="200" cy="62" r="2.4"/><circle cx="270" cy="34" r="1.8"/>
+                <circle cx="430" cy="44" r="2.2"/><circle cx="66" cy="118" r="2"/><circle cx="180" cy="102" r="1.6"/>
+              </g>
+              <path d="M0 226 Q240 196 480 226 L480 300 L0 300Z" fill="#1e2344" opacity=".85"/>
+              <g stroke="#ffd8e4" stroke-width="2.6" fill="none" opacity=".55">
+                <path d="M40 254 Q120 236 200 254 T360 254 T520 254"/>
+              </g>
+              <g transform="translate(238,178)">
+                <circle cx="0" cy="0" r="12" fill="#2a2f57"/>
+                <path d="M-9 14 q9 -5 18 0 l3 28 q-12 5 -24 0z" fill="#ff9fb6"/>
+                <path d="M-14 22 l-20 -14M14 22 l20 -14" stroke="#ff9fb6" stroke-width="5" stroke-linecap="round"/>
+              </g>
+            </svg>
+            <span class="v-cat">音乐影像</span>
+            <span class="v-dur">04:36</span>
+          </div>
+          <div class="v-body">
+            <h4>《晚自习后》MV · 潮湿的乐队</h4>
+            <p>为一支校园乐队拍的第一支 MV。整支片子只用了一台手持机和一盏路灯。</p>
+            <div class="v-foot">
+              <span class="views"><svg viewBox="0 0 24 24"><path d="M2 12s3.6-6.5 10-6.5S22 12 22 12s-3.6 6.5-10 6.5S2 12 2 12z"/><circle cx="12" cy="12" r="2.6"/></svg>63.9 万</span>
+              <span>2023 · MV 02</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="v-card reveal" data-cat="drama">
+          <div class="v-thumb">
+            <svg viewBox="0 0 480 300" preserveAspectRatio="xMidYMid slice" role="img" aria-label="日常短剧封面二">
+              <defs><linearGradient id="t5" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#eef3ff"/><stop offset="100%" stop-color="#c9d6ff"/></linearGradient></defs>
+              <rect width="480" height="300" fill="url(#t5)"/>
+              <rect x="72" y="60" width="146" height="104" rx="8" fill="#fff" stroke="#c3cdea" stroke-width="5"/>
+              <line x1="145" y1="60" x2="145" y2="164" stroke="#c3cdea" stroke-width="5"/>
+              <rect x="278" y="88" width="126" height="90" rx="8" fill="#fff" stroke="#c3cdea" stroke-width="5"/>
+              <line x1="341" y1="88" x2="341" y2="178" stroke="#c3cdea" stroke-width="5"/>
+              <path d="M0 214 Q240 186 480 214 L480 300 L0 300Z" fill="#8e9bf0" opacity=".5"/>
+              <g transform="translate(196,196)">
+                <circle cx="0" cy="0" r="12" fill="#3a4270"/>
+                <path d="M-9 14 q9 -5 18 0 l3 30 q-12 5 -24 0z" fill="#ff8fa8"/>
+                <path d="M-7 44 l-5 22M7 44 l5 22" stroke="#3a4270" stroke-width="6" stroke-linecap="round"/>
+              </g>
+              <g transform="translate(292,204)">
+                <circle cx="0" cy="0" r="11" fill="#2f3660"/>
+                <path d="M-8 13 q8 -5 16 0 l3 26 q-11 5 -22 0z" fill="#a9b4ea"/>
+                <path d="M-6 39 l-5 20M6 39 l5 20" stroke="#2f3660" stroke-width="6" stroke-linecap="round"/>
+              </g>
+            </svg>
+            <span class="v-cat">日常短剧</span>
+            <span class="v-dur">12:40</span>
+          </div>
+          <div class="v-body">
+            <h4>《借你一支笔，还你一个夏天》</h4>
+            <p>从一次借笔开始的故事。剧本改了三稿，最后一稿删掉了原本的告白。</p>
+            <div class="v-foot">
+              <span class="views"><svg viewBox="0 0 24 24"><path d="M2 12s3.6-6.5 10-6.5S22 12 22 12s-3.6 6.5-10 6.5S2 12 2 12z"/><circle cx="12" cy="12" r="2.6"/></svg>88.1 万</span>
+              <span>2024 · 第 09 期</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="v-card reveal" data-cat="doc">
+          <div class="v-thumb">
+            <svg viewBox="0 0 480 300" preserveAspectRatio="xMidYMid slice" role="img" aria-label="青春纪实封面二">
+              <defs><linearGradient id="t6" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff0d9"/><stop offset="100%" stop-color="#ffd0b0"/></linearGradient></defs>
+              <rect width="480" height="300" fill="url(#t6)"/>
+              <circle cx="120" cy="76" r="46" fill="#fff6e3" opacity=".85"/>
+              <g fill="#fff" opacity=".5">
+                <ellipse cx="330" cy="70" rx="56" ry="18"/><ellipse cx="370" cy="60" rx="34" ry="13"/>
+              </g>
+              <path d="M0 214 Q160 176 320 210 T480 200 L480 300 L0 300Z" fill="#e3a877" opacity=".55"/>
+              <g stroke="#fff4e3" stroke-width="3" fill="none" opacity=".7">
+                <path d="M50 240 Q240 208 430 240"/><path d="M30 264 Q240 232 450 264"/>
+              </g>
+              <g transform="translate(262,180)">
+                <circle cx="0" cy="0" r="13" fill="#4a3f33"/>
+                <path d="M-10 15 q10 -6 20 0 l4 30 q-14 6 -28 0z" fill="#fff"/>
+                <path d="M-8 47 l-6 22M8 47 l6 22" stroke="#4a3f33" stroke-width="6" stroke-linecap="round"/>
+              </g>
+            </svg>
+            <span class="v-cat">青春纪实</span>
+            <span class="v-dur">19:27</span>
+          </div>
+          <div class="v-body">
+            <h4>《图书馆闭馆前最后一小时》</h4>
+            <p>拍摄于期末周。我们想记录灯光一盏盏关掉时，那些还坐在原地的背影。</p>
+            <div class="v-foot">
+              <span class="views"><svg viewBox="0 0 24 24"><path d="M2 12s3.6-6.5 10-6.5S22 12 22 12s-3.6 6.5-10 6.5S2 12 2 12z"/><circle cx="12" cy="12" r="2.6"/></svg>57.3 万</span>
+              <span>2023 · 纪实 06</span>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 纪录片专题 ============ -->
+  <section style="padding-top:0">
+    <div class="wrap">
+      <div class="feature-band reveal">
+        <div class="bg-art" aria-hidden="true">
+          <svg viewBox="0 0 1200 480" preserveAspectRatio="xMidYMid slice">
+            <defs>
+              <radialGradient id="glow1" cx="50%" cy="50%" r="50%">
+                <stop offset="0" stop-color="#ff9fb6" stop-opacity=".45"/>
+                <stop offset="100%" stop-color="#ff9fb6" stop-opacity="0"/>
+              </radialGradient>
+              <radialGradient id="glow2" cx="50%" cy="50%" r="50%">
+                <stop offset="0" stop-color="#8f9bff" stop-opacity=".4"/>
+                <stop offset="100%" stop-color="#8f9bff" stop-opacity="0"/>
+              </radialGradient>
+            </defs>
+            <circle cx="180" cy="90" r="260" fill="url(#glow1)"/>
+            <circle cx="1040" cy="400" r="300" fill="url(#glow2)"/>
+            <g stroke="rgba(255,255,255,.12)" stroke-width="1.4" fill="none">
+              <path d="M0 380 Q300 300 600 360 T1200 330"/>
+              <path d="M0 420 Q300 340 600 400 T1200 370"/>
+              <path d="M0 460 Q300 380 600 440 T1200 410"/>
+            </g>
+            <g fill="#fff" opacity=".22">
+              <circle cx="240" cy="180" r="2.6"/><circle cx="420" cy="120" r="2"/><circle cx="760" cy="200" r="2.8"/>
+              <circle cx="920" cy="140" r="2.2"/><circle cx="620" cy="240" r="1.8"/><circle cx="1080" cy="220" r="2.4"/>
+            </g>
+          </svg>
+        </div>
+        <div class="inner">
+          <span class="eyebrow">年度专题</span>
+          <h2>《被擒的日常》第一季<br>现已全集上线</h2>
+          <p>
+            12 集、时长合计 218 分钟。我们用了 11 个月，走访 6 座城市的 9 所学校，
+            把清纯校花的被擒日常tx里最容易被忽略的片段连成一条完整的时间线。每一集都附主创手记与拍摄地图。
+          </p>
+          <div class="actions">
+            <a class="btn btn-primary" href="#join">获取观看方式</a>
+            <a class="btn btn-ghost" href="#team">认识主创</a>
+          </div>
+        </div>
+        <div class="fb-stats">
+          <div class="fb-stat">
+            <div class="n">12<em>集</em></div>
+            <div class="t">完整季数</div>
+          </div>
+          <div class="fb-stat">
+            <div class="n">218<em>分钟</em></div>
+            <div class="t">总片长</div>
+          </div>
+          <div class="fb-stat">
+            <div class="n">9<em>所学校</em></div>
+            <div class="t">拍摄地点</div>
+          </div>
+          <div class="fb-stat">
+            <div class="n">4.9<em>/5</em></div>
+            <div class="t">观众评分</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 创作团队 ============ -->
+  <section id="team" class="bg-soft">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">创作团队</span>
+        <h2>把片子做出来的人</h2>
+        <p>团队核心成员 18 人，另有 200 多位来自高校的兼职摄影、录音与后期伙伴。下面是几位常驻主创。</p>
+      </div>
+
+      <div class="team-grid">
+        <article class="team-card reveal">
+          <div class="avatar">
+            <svg viewBox="0 0 100 100" role="img" aria-label="导演头像">
+              <defs><linearGradient id="a1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffd3de"/><stop offset="100%" stop-color="#c3cdfa"/></linearGradient></defs>
+              <rect width="100" height="100" fill="url(#a1)"/>
+              <circle cx="50" cy="40" r="18" fill="#3a4270"/>
+              <path d="M18 100 q0 -28 32 -28 t32 28z" fill="#6f7ce0"/>
+            </svg>
+          </div>
+          <h4>沈知遥</h4>
+          <div class="role">总导演 / 编剧</div>
+          <p>传媒学院毕业，习惯在开拍前把分镜撕掉重画。相信留白比台词更能说明问题。</p>
+          <div class="tags"><span>叙事</span><span>分镜</span></div>
+        </article>
+
+        <article class="team-card reveal">
+          <div class="avatar">
+            <svg viewBox="0 0 100 100" role="img" aria-label="摄影指导头像">
+              <defs><linearGradient id="a2" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#d7e8ff"/><stop offset="100%" stop-color="#b4f0e0"/></linearGradient></defs>
+              <rect width="100" height="100" fill="url(#a2)"/>
+              <circle cx="50" cy="40" r="18" fill="#2f3660"/>
+              <path d="M18 100 q0 -28 32 -28 t32 28z" fill="#3f9f8f"/>
+            </svg>
+          </div>
+          <h4>陆青禾</h4>
+          <div class="role">摄影指导</div>
+          <p>偏爱自然光与手持。作品里那些微微晃动的镜头，基本都是他坚持保留的。</p>
+          <div class="tags"><span>4K 摄影</span><span>灯光</span></div>
+        </article>
+
+        <article class="team-card reveal">
+          <div class="avatar">
+            <svg viewBox="0 0 100 100" role="img" aria-label="后期总监头像">
+              <defs><linearGradient id="a3" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffe6cf"/><stop offset="100%" stop-color="#ffc3d2"/></linearGradient></defs>
+              <rect width="100" height="100" fill="url(#a3)"/>
+              <circle cx="50" cy="40" r="18" fill="#4a3f33"/>
+              <path d="M18 100 q0 -28 32 -28 t32 28z" fill="#e08a9f"/>
+            </svg>
+          </div>
+          <h4>许南</h4>
+          <div class="role">后期总监</div>
+          <p>负责调色与剪辑节奏。能把 40 小时素材剪成 12 分钟，还不让人觉得快。</p>
+          <div class="tags"><span>剪辑</span><span>调色</span></div>
+        </article>
+
+        <article class="team-card reveal">
+          <div class="avatar">
+            <svg viewBox="0 0 100 100" role="img" aria-label="社区运营头像">
+              <defs><linearGradient id="a4" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#e3deff"/><stop offset="100%" stop-color="#ffd9e6"/></linearGradient></defs>
+              <rect width="100" height="100" fill="url(#a4)"/>
+              <circle cx="50" cy="40" r="18" fill="#3a4270"/>
+              <path d="M18 100 q0 -28 32 -28 t32 28z" fill="#8f9bff"/>
+            </svg>
+          </div>
+          <h4>温予</h4>
+          <div class="role">社区运营</div>
+          <p>每天回复投稿邮箱。她说，最开心的时刻是收到一句“谢谢你拍了我们的故事”。</p>
+          <div class="tags"><span>投稿</span><span>放映会</span></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 社区与数据 ============ -->
+  <section id="community">
+    <div class="wrap">
+      <div class="community">
+        <div class="reveal">
+          <span class="eyebrow">社区与数据</span>
+          <h2>一支片子，观众也是作者</h2>
+          <p>
+            每支片子发布前，我们会把粗剪版放进社区小范围放映，收集真实的反馈再定稿。
+            很多人第一次投稿时写得很短，后来慢慢变成了常驻的主创伙伴。
+          </p>
+          <div class="stat-grid" style="margin-top:30px">
+            <div class="stat-box">
+              <div class="k">26<em>万</em></div>
+              <div class="d">社区注册成员</div>
+            </div>
+            <div class="stat-box">
+              <div class="k">4,200<em>+</em></div>
+              <div class="d">累计收到投稿</div>
+            </div>
+            <div class="stat-box">
+              <div class="k">68<em>场</em></div>
+              <div class="d">线下放映会</div>
+            </div>
+            <div class="stat-box">
+              <div class="k">1.2<em>亿</em></div>
+              <div class="d">全网累计播放</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="reveal">
+          <div class="quote-list">
+            <div class="quote">
+              <p>“看第 7 期的时候哭了。不是因为剧情，是因为那个走廊和我高中一模一样。”</p>
+              <div class="who">
+                <span class="av">
+                  <svg viewBox="0 0 40 40"><rect width="40" height="40" fill="#ffd3de"/><circle cx="20" cy="16" r="7" fill="#3a4270"/><path d="M6 40q0-12 14-12t14 12z" fill="#6f7ce0"/></svg>
+                </span>
+                <div><b>林同学</b><span>观众 · 苏州</span></div>
+              </div>
+            </div>
+            <div class="quote">
+              <p>“从投第一封邮件到参与拍摄，隔了一年半。他们真的有在认真看每一封投稿。”</p>
+              <div class="who">
+                <span class="av">
+                  <svg viewBox="0 0 40 40"><rect width="40" height="40" fill="#d7e8ff"/><circle cx="20" cy="16" r="7" fill="#2f3660"/><path d="M6 40q0-12 14-12t14 12z" fill="#3f9f8f"/></svg>
+                </span>
+                <div><b>阿舟</b><span>社区共创者</span></div>
+              </div>
+            </div>
+            <div class="quote">
+              <p>“作为老师，我把《早八人的一天》放给班上看。那天全班都很安静。”</p>
+              <div class="who">
+                <span class="av">
+                  <svg viewBox="0 0 40 40"><rect width="40" height="40" fill="#ffe6cf"/><circle cx="20" cy="16" r="7" fill="#4a3f33"/><path d="M6 40q0-12 14-12t14 12z" fill="#e08a9f"/></svg>
+                </span>
+                <div><b>陈老师</b><span>高校教师</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div style="margin-top:70px;display:grid;grid-template-columns:1fr 1fr;gap:56px" class="about-grid">
+        <div class="reveal">
+          <span class="eyebrow">发展历程</span>
+          <h2 style="margin:12px 0 22px">六年，一步步走到这里</h2>
+          <div class="timeline">
+            <div class="tl-item">
+              <div class="yr">2019</div>
+              <h4>社团成立，第一支短片上线</h4>
+              <p>《放学后》在校园平台获得 8 万播放，团队从 3 人扩到 7 人。</p>
+            </div>
+            <div class="tl-item">
+              <div class="yr">2021</div>
+              <h4>确立四条内容主线</h4>
+              <p>短剧、纪实、访谈、音乐影像的框架成型，开始稳定周更。</p>
+            </div>
+            <div class="tl-item">
+              <div class="yr">2023</div>
+              <h4>首场线下放映会</h4>
+              <p>在三个城市举办，累计 1,200 人到场，也第一次收到大量投稿。</p>
+            </div>
+            <div class="tl-item">
+              <div class="yr">2024</div>
+              <h4>《被擒的日常》第一季完成</h4>
+              <p>11 个月、6 座城市、9 所学校，成为团队目前最完整的一次表达。</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="reveal">
+          <span class="eyebrow">参与方式</span>
+          <h2 style="margin:12px 0 18px">你可以这样加入我们</h2>
+          <p>不需要专业设备，也不需要完整剧本。只要有一个你愿意讲出来的日常，就可以从一封邮件开始。</p>
+          <div class="about-points" style="margin-top:24px">
+            <div class="point">
+              <span class="ic" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M4 6h16v12H4z"/><path d="M4 7l8 6 8-6"/></svg>
+              </span>
+              <div>
+                <h4>投稿你的故事</h4>
+                <p>用 300 字讲清一个瞬间即可，我们会在一周内回复是否适合影像化。</p>
+              </div>
+            </div>
+            <div class="point">
+              <span class="ic" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><rect x="3" y="6" width="13" height="12" rx="2.6"/><path d="M16 10l5-3v10l-5-3z"/></svg>
+              </span>
+              <div>
+                <h4>参与一次拍摄</h4>
+                <p>每季度开放一次跟组名额，涵盖摄影助理、录音、场记与后期协助。</p>
+              </div>
+            </div>
+            <div class="point">
+              <span class="ic" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M12 3l2.6 6.3 6.8.5-5.2 4.4 1.6 6.6L12 17.3 6.2 20.8l1.6-6.6L2.6 9.8l6.8-.5L12 3z"/></svg>
+              </span>
+              <div>
+                <h4>成为放映伙伴</h4>
+                <p>如果你在学校或社区有放映空间，可以申请加入我们的城市放映网络。</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 订阅 CTA ============ -->
+  <section id="join" style="padding-top:0">
+    <div class="wrap">
+      <div class="cta reveal">
+        <div class="inner">
+          <span class="eyebrow" style="color:#fff">加入社区</span>
+          <h2>每周一封片单，不发广告</h2>
+          <p>留下邮箱，你会在每周日晚上收到本周更新提醒、主创手记和一次线下放映的报名入口。随时可以退订。</p>
+          <form class="subscribe" id="subForm" novalidate>
+            <input type="email" id="subEmail" placeholder="你的常用邮箱" aria-label="邮箱地址" autocomplete="email">
+            <button class="btn" type="submit">订阅片单</button>
+          </form>
+          <div class="form-msg" id="formMsg" role="status" aria-live="polite"></div>
+          <p class="note">已有 26 万人在社区里 · 我们不会把你的邮箱提供给任何第三方</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section id="faq" style="padding-top:0">
+    <div class="wrap">
+      <div class="section-head reveal" style="text-align:center;margin-inline:auto">
+        <span class="eyebrow" style="justify-content:center">常见问题</span>
+        <h2>你可能想知道的</h2>
+        <p style="margin-inline:auto">如果这里没有你要的答案，欢迎直接给社区邮箱写信，我们通常三个工作日内回复。</p>
+      </div>
+
+      <div class="faq-list" id="faqList">
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">
+            <span>清纯校花的被擒日常tx 是什么类型的视频内容？</span>
+            <span class="sign" aria-hidden="true"></span>
+          </button>
+          <div class="faq-a"><p>它是一组以校园青春日常为母题的纪实型短剧与纪录影像合集，包含日常短剧、青春纪实、人物访谈和音乐影像四条主线。内容由真实投稿改编，拍摄与发布均经当事人同意。</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">
+            <span>更新频率是怎样的？在哪里可以看？</span>
+            <span class="sign" aria-hidden="true"></span>
+          </button>
+          <div class="faq-a"><p>常规更新为每周三、周六各一期，节假日会有特别企划。订阅邮件后，每周日会收到下一周的更新片单与播放链接。线下放映信息也会同步在社区公告中。</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">
+            <span>我可以投稿自己的故事吗？有什么要求？</span>
+            <span class="sign" aria-hidden="true"></span>
+          </button>
+          <div class="faq-a"><p>当然可以。我们没有严格格式要求，300 字左右讲清一个具体场景即可，越具体越好。请尽量注明时间、地点和你当时的感受。投稿后一周内会收到是否适合影像化的回复。</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">
+            <span>参与拍摄需要专业经验吗？</span>
+            <span class="sign" aria-hidden="true"></span>
+          </button>
+          <div class="faq-a"><p>不需要。每季度开放的跟组名额都以学习为主，会有主创带你熟悉设备与流程。我们更看重你是否守时、是否认真对待别人的故事。</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">
+            <span>片子的版权与授权如何处理？</span>
+            <span class="sign" aria-hidden="true"></span>
+          </button>
+          <div class="faq-a"><p>所有出镜与故事均签署书面授权，参与方可随时要求下架相关片段。商业合作会单独签署协议，并明确告知观众哪些内容含有品牌合作。</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ 页脚 ============ -->
+<footer>
+  <div class="wrap">
+    <div class="f-grid">
+      <div class="f-brand">
+        <a class="logo" href="#top">
+          <span class="mark" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M8 5.2c0-.9 1-1.5 1.8-1l8 5.3c.8.5.8 1.6 0 2.1l-8 5.3c-.8.5-1.8-.1-1.8-1V5.2z"/><rect x="3" y="4" width="2.4" height="16" rx="1.2"/></svg>
+          </span>
+          <span>清纯校花的被擒日常tx<small>QINGCHUN · FILM STUDIO</small></span>
+        </a>
+        <p>一家专注青年生活纪实的视频品牌。用镜头保存那些以为无人留意的日常，把普通的日子拍得有分量的样子。</p>
+        <div class="f-social">
+          <a href="#top" aria-label="视频平台"><svg viewBox="0 0 24 24"><path d="M4 5.5h16v11H9l-5 4v-15z"/></svg></a>
+          <a href="#top" aria-label="社交平台"><svg viewBox="0 0 24 24"><path d="M4 6h16v12H4z" opacity=".001"/><circle cx="12" cy="12" r="9"/></svg></a>
+          <a href="#top" aria-label="邮件联系"><svg viewBox="0 0 24 24"><path d="M3 6h18v12H3z"/><path d="M3 7l9 6 9-6" fill="#10141f"/></svg></a>
+          <a href="#top" aria-label="音乐平台"><svg viewBox="0 0 24 24"><path d="M9 18V6l10-2v12"/><circle cx="6.5" cy="18" r="2.5"/><circle cx="16.5" cy="16" r="2.5"/></svg></a>
+        </div>
+      </div>
+
+      <div class="f-col">
+        <h5>内容</h5>
+        <ul>
+          <li><a href="#channels">日常短剧</a></li>
+          <li><a href="#channels">青春纪实</a></li>
+          <li><a href="#channels">人物访谈</a></li>
+          <li><a href="#channels">音乐影像</a></li>
+          <li><a href="#works">精选片单</a></li>
+        </ul>
+      </div>
+
+      <div class="f-col">
+        <h5>关于</h5>
+        <ul>
+          <li><a href="#about">品牌故事</a></li>
+          <li><a href="#team">创作团队</a></li>
+          <li><a href="#community">发展历程</a></li>
+          <li><a href="#faq">常见问题</a></li>
+          <li><a href="#join">合作洽谈</a></li>
+        </ul>
+      </div>
+
+      <div class="f-col f-news">
+        <h5>社区简报</h5>
+        <p>每周日一封，包含更新片单与线下放映报名。</p>
+        <form id="footForm" novalidate>
+          <input type="email" id="footEmail" placeholder="邮箱地址" aria-label="邮箱地址" autocomplete="email">
+          <button type="submit">订阅</button>
+        </form>
+        <div class="f-note" id="footMsg"></div>
+      </div>
+    </div>
+
+    <div class="f-bottom">
+      <span>© 2024 清纯校花的被擒日常tx · 光影影像工作室 · 保留所有权利</span>
+      <div class="links">
+        <a href="#top">隐私政策</a>
+        <a href="#top">使用条款</a>
+        <a href="#top">授权说明</a>
+        <a href="#top">联系我们</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<button class="to-top" id="toTop" aria-label="返回顶部">
+  <svg viewBox="0 0 24 24"><path d="M12 19V5M6 11l6-6 6 6"/></svg>
+</button>
+
+<script>
+(function(){
+  "use strict";
+
+  /* ---------- 导航折叠 ---------- */
+  var nav = document.getElementById('nav');
+  var navToggle = document.getElementById('navToggle');
+  if (navToggle) {
+    navToggle.addEventListener('click', function(){
+      var open = nav.classList.toggle('open');
+      navToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+    document.querySelectorAll('#navlinks a').forEach(function(a){
+      a.addEventListener('click', function(){
+        nav.classList.remove('open');
+        navToggle.setAttribute('aria-expanded','false');
+      });
+    });
+  }
+
+  /* ---------- 滚动进度与回到顶部 ---------- */
+  var progress = document.getElementById('progress');
+  var toTop = document.getElementById('toTop');
+  function onScroll(){
+    var h = document.documentElement;
+    var max = h.scrollHeight - h.clientHeight;
+    var pct = max > 0 ? (h.scrollTop || document.body.scrollTop) / max * 100 : 0;
+    if (progress) progress.style.width = pct + '%';
+    if (toTop) {
+      if ((h.scrollTop || document.body.scrollTop) > 520) toTop.classList.add('show');
+      else toTop.classList.remove('show');
+    }
+  }
+  window.addEventListener('scroll', onScroll, {passive:true});
+  onScroll();
+  if (toTop) {
+    toTop.addEventListener('click', function(){
+      window.scrollTo({top:0, behavior:'smooth'});
+    });
+  }
+
+  /* ---------- 滚动进入动画 ---------- */
+  var reveals = document.querySelectorAll('.reveal');
+  if ('IntersectionObserver' in window) {
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(en){
+        if (en.isIntersecting) {
+          en.target.classList.add('in');
+          io.unobserve(en.target);
+        }
+      });
+    }, {threshold:0.12, rootMargin:'0px 0px -40px 0px'});
+    reveals.forEach(function(el, i){
+      el.style.transitionDelay = (i % 4) * 60 + 'ms';
+      io.observe(el);
+    });
+  } else {
+    reveals.forEach(function(el){ el.classList.add('in'); });
+  }
+
+  /* ---------- 作品筛选 ---------- */
+  var filters = document.getElementById('filters');
+  var grid = document.getElementById('videoGrid');
+  if (filters && grid) {
+    filters.addEventListener('click', function(e){
+      var btn = e.target.closest('.chip');
+      if (!btn) return;
+      filters.querySelectorAll('.chip').forEach(function(c){
+        c.classList.remove('active');
+        c.setAttribute('aria-selected','false');
+      });
+      btn.classList.add('active');
+      btn.setAttribute('aria-selected','true');
+      var cat = btn.getAttribute('data-cat');
+      grid.querySelectorAll('.v-card').forEach(function(card){
+        var show = (cat === 'all' || card.getAttribute('data-cat') === cat);
+        card.style.display = show ? '' : 'none';
+        if (show) {
+          card.classList.remove('in');
+          // 强制重排以重新播放动画
+          void card.offsetWidth;
+          card.classList.add('in');
+        }
+      });
+    });
+  }
+
+  /* ---------- FAQ 手风琴 ---------- */
+  var faqList = document.getElementById('faqList');
+  if (faqList) {
+    faqList.addEventListener('click', function(e){
+      var q = e.target.closest('.faq-q');
+      if (!q) return;
+      var item = q.parentElement;
+      var isOpen = item.classList.contains('open');
+      faqList.querySelectorAll('.faq-item').forEach(function(it){
+        it.classList.remove('open');
+        var b = it.querySelector('.faq-q');
+        if (b) b.setAttribute('aria-expanded','false');
+      });
+      if (!isOpen) {
+        item.classList.add('open');
+        q.setAttribute('aria-expanded','true');
+      }
+    });
+  }
+
+  /* ---------- 订阅表单 ---------- */
+  function bindForm(formId, inputId, msgId){
+    var form = document.getElementById(formId);
+    var input = document.getElementById(inputId);
+    var msg = document.getElementById(msgId);
+    if (!form || !input || !msg) return;
+    form.addEventListener('submit', function(e){
+      e.preventDefault();
+      var v = (input.value || '').trim();
+      var ok = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(v);
+      if (!ok) {
+        msg.textContent = '请填写一个有效的邮箱地址，方便我们寄送片单。';
+        input.focus();
+        return;
+      }
+      msg.textContent = '订阅成功，本周日晚上见。感谢你加入 ' + v.split('@')[0] + ' 的片单。';
+      form.reset();
+      input.blur();
+    });
+  }
+  bindForm('subForm','subEmail','formMsg');
+  bindForm('footForm','footEmail','footMsg');
+
+  /* ---------- 播放按钮交互 ---------- */
+  var playBtn = document.getElementById('playBtn');
+  if (playBtn) {
+    playBtn.addEventListener('click', function(){
+      var card = playBtn.closest('.player-card');
+      if (!card) return;
+      var meta = card.querySelector('.player-meta h3');
+      playBtn.style.transform = 'translate(-50%,-50%) scale(.86)';
+      setTimeout(function(){ playBtn.style.transform = ''; }, 180);
+      if (meta) {
+        var origin = meta.textContent;
+        meta.textContent = '正在载入《被擒的日常 · 操场边的第七分钟》…';
+        setTimeout(function(){ meta.textContent = origin; }, 2200);
+      }
+    });
+  }
+
+  /* ---------- 平滑锚点（兼容旧浏览器） ---------- */
+  document.querySelectorAll('a[href^="#"]').forEach(function(a){
+    a.addEventListener('click', function(e){
+      var id = a.getAttribute('href');
+      if (id === '#' || id.length < 2) return;
+      var target = document.querySelector(id);
+      if (!target) return;
+      e.preventDefault();
+      var top = target.getBoundingClientRect().top + window.pageYOffset - 78;
+      window.scrollTo({top: top, behavior:'smooth'});
+    });
+  });
+
+  /* ---------- 数字滚动 ---------- */
+  function animateNumber(el){
+    var text = el.textContent;
+    var m = text.match(/([\d.]+)/);
+    if (!m) return;
+    var target = parseFloat(m[1]);
+    var decimals = (m[1].split('.')[1] || '').length;
+    var start = 0;
+    var dur = 1100;
+    var t0 = null;
+    function step(ts){
+      if (!t0) t0 = ts;
+      var p = Math.min((ts - t0) / dur, 1);
+      var eased = 1 - Math.pow(1 - p, 3);
+      var val = (start + (target - start) * eased).toFixed(decimals);
+      el.textContent = text.replace(m[1], val);
+      if (p < 1) requestAnimationFrame(step);
+      else el.textContent = text;
+    }
+    requestAnimationFrame(step);
+  }
+  if ('IntersectionObserver' in window) {
+    var numIO = new IntersectionObserver(function(entries){
+      entries.forEach(function(en){
+        if (en.isIntersecting) {
+          animateNumber(en.target);
+          numIO.unobserve(en.target);
+        }
+      });
+    }, {threshold:0.6});
+    document.querySelectorAll('.hero-stats .num, .fb-stat .n, .stat-box .k').forEach(function(el){
+      numIO.observe(el);
+    });
+  }
+})();
+</script>
+</body>
+  </html>
